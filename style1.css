@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    background: url(bgbus1-transformed.jpeg);
+    background-size: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: yellow;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar>a {
+    font-size: 1.7rem;
+    text-decoration: none;
+    margin-left: 4rem;
+
+    color: white;
+}
+
+.navbar>a:hover,
+.navbar a.active {
+    color: aqua;
+}
+
+.section {
+    text-align: right;
+    color: white;
+    padding: 100px;
+    font-size: 2rem;
+}
+
+#konten-menu {
+    float: left;
+    padding: 30px 2px;
+    text-align: justify;
+}
+
+#konten-menu p {
+    font-size: 1.6rem;
+}
+
+.home {
+    padding: 160px;
+    height: 100vh;
+    font-size: 2.5rem;
+    /* Nilai alpha diatur menjadi 0.5 untuk transparansi */
+    color: white;
+    font-size: 5rem;
+    width: 70%;
+    height: 100%;
+    overflow: auto;
+    float: left;
+}
