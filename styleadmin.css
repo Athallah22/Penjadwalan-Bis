@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    color: #6a6f8c;
+    font: 600 16px/18px "Open Sans", sans-serif;
+  }
+  
+  *,
+  :after,
+  :before {
+    box-sizing: border-box;
+  }
+  
+  .clearfix:after,
+  .clearfix:before {
+    content: "";
+    display: table;
+  }
+  
+  .clearfix:after {
+    clear: both;
+    display: block;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .login-wrap {
+    width: 100%;
+    margin: auto;
+    max-width: 960px;
+    min-height: 834px;
+    position: relative;
+    background-color: transparent;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .login-html {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 174px 70px 50px 70px;
+    background: rgba(40, 57, 101, 0.9);
+  }
+  
+  .login-form {
+    min-height: 345px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+  
+  .login-form .group {
+    margin-bottom: 15px;
+  }
+  
+  .login-form .group .label,
+  .login-form .group .input,
+  .login-form .group .button {
+    width: 100%;
+    color: white;
+    display: block;
+  }
+  .login-form .group .input,
+  .login-form .group .button {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .login-form .group .input:focus,
+.login-form .group .button:focus {
+  color: #000;
+}
+  .login-form .group input[data-type="password"] {
+    -webkit-text-security: circle;
+  }
+  
+  .login-form .group .label {
+    color: #aaa;
+    font-size: 12px;
+  }
+  
+  .login-form .group .button {
+    background: #1161ee;
+    cursor: pointer;
+  }
+  
+  .login-form .group .button:hover {
+    background: #1454c4;
+    cursor: pointer;
+  }
+  
+  .login-form .group label .icon {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .login-form .group label .icon:before,
+  .login-form .group label .icon:after {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    transition: all 0.2s ease-in-out 0s;
+  }
+  
+  .login-form .group label .icon:before {
+    left: 3px;
+    width: 5px;
+    bottom: 6px;
+    transform: scale(0) rotate(0);
+  }
+  
+  .login-form .group label .icon:after {
+    top: 6px;
+    right: 0;
+    transform: scale(0) rotate(0);
+  }
+  
+  .login-form .group .check:checked+label {
+    color: #fff;
+  }
+  
+  .login-form .group .check:checked+label .icon {
+    background: #1161ee;
+  }
+  
+  .login-form .group .check:checked+label .icon:before {
+    transform: scale(1) rotate(45deg);
+  }
+  
+  .login-form .group .check:checked+label .icon:after {
+    transform: scale(1) rotate(-45deg);
+  }
+  
+  .hr {
+    height: 2px;
+    margin: 60px 0 50px 0;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .foot-lnk {
+    text-align: center;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: left;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  footer {
+    background-color: transparent;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .footer-kontent p {
+    font-size: 1.4rem;
+  }
+  header {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font: 600 16px/18px "Open Sans", sans-serif;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: yellow;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar>a {
+    font-size: 1.7rem;
+    text-decoration: none;
+    margin-left: 4rem;
+
+    color: white;
+}
+
+.navbar>a:hover,
+.navbar a.active {
+    color: aqua;
+}
+
+.navbar .btnLogin-popup {
+    width: 95px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 500;
+    margin-left: 4rem;
+    cursor: pointer;
+}
+
+.navbar .btnLogin-popup:hover {
+    background: white;
+    color: black;
+}
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poopins, sans-serif';
+}
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    background: url(bgbus1-transformed.jpeg);
+    background-size: 100%;
+
+}

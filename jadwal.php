@@ -5,22 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Pweb</title>
-    <link rel="stylesheet" href="style1.css">
+
+    <link rel="stylesheet" href="stylejadwal2.css">
     <link rel="stylesheet" href="stylejadwal.css">
 </head>
 
 <body class="main-content">
     <header class="header">
-        <a href="#" class="logo">Drive True</a>
+    <a href="#" class="logo">Dahlan Bus</a>
         <nav class="navbar">
-            <a href="index1.html" class="active">HOME</a>
-            <a href="#jadwal">JADWAL</a>
-            <a href="Register.php">LOGIN</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="jadwal.php">Jadwal</a>
+            <button class="btnLogin-popup">
+                <a href="Register.php">Login</a></button>
         </nav>
     </header>
 
     <section class="home" id="home">
         <div class="home-kontent">
+        <div class="data-table-wrapper">
             <?php
             $db_host = 'localhost'; // Nama Server
             $db_user = 'root'; // User Server

@@ -9,18 +9,28 @@
 </head>
 
 <body class="main-content">
-
+    <!--Header-->
     <header class="header">
-        <a href="#" class="logo">Drive True</a>
+        <a href="#" class="logo">Dahlan Bus</a>
         <nav class="navbar">
-            <a href="index1.html" class="active">HOME</a>
-            <a href="jadwal.php">JADWAL</a>
-            <a href="Register.php">LOGIN</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="jadwal.php">Jadwal</a>
+            <button class="btnLogin-popup">
+                <a href="admin.php">Admin</a></button>
         </nav>
     </header>
+    <!--Home section desain-->
     <section class="home" id="home">
         <div class="home-kontent">
-            
+            <h3>Welcome to</h3>
+            <h1>DAHLAN BUS</h1>
+            <h3>Perjalanan Bus Setiap Hari</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis adipisci quae aperiam perferendis
+                consequuntur beatae temporibus, quibusdam maiores sit ut. Minima, quas? Earum facere, qui consequuntur
+                blanditiis modi ea. Mollitia?</p>
+            <div id="konten-menu">
+            </div>
+
         </div>
         </div>
     </section>

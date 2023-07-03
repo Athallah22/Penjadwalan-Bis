@@ -11,11 +11,12 @@
 
 <body class="main-content">
     <header class="header">
-        <a href="#" class="logo">Drive True</a>
+        <a href="#" class="logo">Dahlan Bus</a>
         <nav class="navbar">
-            <a href="index1.html">HOME</a>
-            <a href="jadwal.php">JADWAL</a>
-            <a href="#login">LOGIN</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="jadwal.php">Jadwal</a>
+            <button class="btnLogin-popup">
+                <a href="Register.php">Login</a></button>
         </nav>
     </header>
             <div class="login-wrap">
@@ -34,7 +35,7 @@
                         session_start();
                         $_SESSION['login'] = TRUE;
                         header("location: dashboard.php");
-                        exit; // It's good practice to exit after redirecting
+                        exit; 
                     } else {
                         echo 'Login failed';
                     }
@@ -43,11 +44,11 @@
                 <form method="post" action="Register.php" enctype="multipart/form-data">
                     <div class="group">
                         <label for="user" class="label">Username</label>
-                        <input id="user" type="text" class="input" name="user"> <!-- Add name attribute -->
+                        <input id="user" type="text" class="input" name="user">
                     </div>
                     <div class="group">
                         <label for="pass" class="label">Password</label>
-                        <input id="pass" type="password" class="input" name="pass"> <!-- Add name attribute and change type to "password" -->
+                        <input id="pass" type="password" class="input" name="pass"> 
                     </div>
                     <div class="group">
                         <input id="check" type="checkbox" class="check" checked>
